@@ -107,15 +107,19 @@ int ninjaTraining(int n, vector<vector<int>> &points)
     prev[2] = max(points[0][0], points[0][1]);
     prev[3] = max(points[0][0], max(points[0][1], points[0][2]));
 
+    //prev[i] stores max. points we can get if we do i'th task on (prev+1)th day
+
     for(int day = 1; day<n; day++) {
         vector<int> temp(4);
+        //this will store the max points we can get if we did last'th task on (day+1)'th day
         for(int last = 0; last < 4; last++) {
 
             for(int task = 0; task < 3; task++) {
 
                 if(task != last)
-                temp[last] = max(temp[last], points[day][task] + prev[task]);
-            }
+                temp[last] = max(temp[last], points[day][task] + prev[task]); //prev task will which the max points we can get if 
+                // we do task'th task on day'th day (passing it as 'last' for previous day)
+            }           
         }
         prev = temp; //so that temp can serve as prev for the next iteration
     }
