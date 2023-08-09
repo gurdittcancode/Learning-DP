@@ -24,6 +24,11 @@ public:
     }
 
     int rob(vector<int>& nums) {
+        /*if you analyze the problem, it simply means, in a combination, you can 
+        either have the first house or the last house. So create 2 arrays, one which has
+        the first house, one which has the last house, and find the max sum possible from these
+        arrays
+        */
 
         int n = nums.size();
 

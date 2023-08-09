@@ -32,9 +32,19 @@ int maximumNonAdjacentSum(vector<int> &nums){
     // return f(nums, nums.size() - 1, dp);
 
     // vector<int> dp(nums.size());
+    dp[0] = nums[0];
 
-    // dp[0] = nums[0];
+    for(int i = 1; i < nums.size(); i++) {
+        int pick = nums[i];
+        pick += i -2 >= 0 ? dp[i-2] : 0;
 
+        int notPick = 0 + dp[i-1];
+        dp[i] = max(pick, notPick);
+    }
+
+    return dp[nums.size() - 1];
+
+    //SPACE OPTIMIZE
     int prev = nums[0]; //for i = 1
     int prev2 = 0;
 
@@ -50,7 +60,4 @@ int maximumNonAdjacentSum(vector<int> &nums){
     }    
 
     return prev;
-
-    //SPACE OPTIMIZE upar hi hai
-
 }
