@@ -1,5 +1,8 @@
 /*This solution is absolutely correct, not getting submitted on CodeStudio for some 
 reason
+
+  https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/
+  
 */
 
 int minSubsetSumDifference(vector<int>& arr, int n) {

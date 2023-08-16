@@ -1,17 +1,6 @@
 //From Code Studio, like House Robber from LeetCode
 
-/*
-	1 2 4
-	ans -> 5 (1 + 4)
-*/
-
-/*
-
-1. try out all subsequences, pick the one with maximum sum
-	(Recursion)
-
-	pick/non-pick
-*/
+//https://www.codingninjas.com/studio/problems/maximum-sum-of-non-adjacent-elements_843261
 
 int f(vector<int>& nums, int idx, vector<int>& dp) {
     if(idx < 0) return 0;

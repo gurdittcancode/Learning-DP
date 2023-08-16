@@ -1,3 +1,5 @@
+//https://www.codingninjas.com/studio/problems/subset-sum-equal-to-k_1550954
+
 #include <bits/stdc++.h>
 
 bool f(int idx, int target, int n, vector<int> &arr, vector<vector<int>> &dp) {

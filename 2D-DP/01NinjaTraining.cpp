@@ -1,4 +1,4 @@
-// Similar to AtCoder vacation -> https://atcoder.jp/contests/dp/tasks/dp_c
+// Similar to AtCoder vacation https://www.codingninjas.com/studio/problems/ninja-s-training_3621003
 
 #include<bits/stdc++.h>
 using namespace std;

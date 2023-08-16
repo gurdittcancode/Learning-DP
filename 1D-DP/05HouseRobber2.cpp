@@ -1,5 +1,4 @@
-// Same as house robber, but now neighbourhood is circular
-// (first and last house are adjacent)
+//https://leetcode.com/problems/house-robber-ii/
 
 class Solution {
 public:
