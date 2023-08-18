@@ -26,7 +26,7 @@ bool subsetSumToK(int n, int k, vector<int> &arr) {
 
     // for(int i = 0; i<n; i++) dp[i][0] = true;
 
-    // if(arr[0] == target) dp[0][arr[0]] = true;
+    // dp[0][arr[0]] = true;
 
     // for(int i = 1; i<n; i++) {
     //     for(int t = 1; t<=target; t++) {
@@ -46,6 +46,7 @@ bool subsetSumToK(int n, int k, vector<int> &arr) {
     cur[0] = true;
 
     if(arr[0] <= k) prev[arr[0]] = true;
+    //prev is of size k. if arr[0] = 10 and k = 4, prev[10] is out of bounds.
 
     //THE ZERO'TH INDEX OF CUR NEEDS TO BE MARKED TRUE (BASE CASE)
 

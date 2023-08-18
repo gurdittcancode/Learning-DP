@@ -5,7 +5,8 @@ int f(int ind, int target, vector<int> &arr, vector<vector<int>> &dp) {
 
 	//including case where there can be 0s in array
 	if(idx == 0) {
-		if(target == 0 && arr[0] == 0) return 2;
+		if(target == 0 && arr[0] == 0) return 2; //sum of [0,1,3...] == [1,3...], so we should include the subset where 0 is there, and
+												//where 0 isn't there, that's why we return 2
 		if(target == 0 || target == arr[0]) return 1;
 		return 0;
 	}
@@ -19,12 +20,6 @@ int f(int ind, int target, vector<int> &arr, vector<vector<int>> &dp) {
 	// if(arr[idx] <= target) pick = f(idx-1, target - arr[idx], arr, dp);
 
 	// return dp[idx][target] = pick + notPick;
-
-	 if(target==0)
-        return 1;
-    
-    if(ind == 0)
-        return arr[0] == target;
     
     if(dp[ind][target]!=-1)
         return dp[ind][target];
