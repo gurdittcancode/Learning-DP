@@ -1,6 +1,6 @@
 /*This solution is absolutely correct, not getting submitted on CodeStudio for some reason
 
-  https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/
+  https://www.codingninjas.com/studio/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum_842494
   
 */
 

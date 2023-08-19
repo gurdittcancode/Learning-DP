@@ -1,4 +1,4 @@
-//https://leetcode.com/problems/partition-equal-subset-sum/description/
+//https://leetcode.com/problems/partition-equal-subset-sum/
 
 bool canPartition(vector<int> &nums, int n) {
 	// Write your code here.
