@@ -1,3 +1,5 @@
+//https://www.codingninjas.com/studio/problems/longest-common-subsequence_1063255
+
 #include <bits/stdc++.h> 
 
 // int f(int idx1, int idx2, string &str1, string &str2, vector<vector<int>> &dp) {

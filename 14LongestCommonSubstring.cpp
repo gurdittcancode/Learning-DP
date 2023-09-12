@@ -1,3 +1,5 @@
+//https://www.codingninjas.com/studio/problems/longest-common-substring_1235207
+
 int lcs(string &s, string &t){
 
     int m = s.size();
