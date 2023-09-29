@@ -57,25 +57,9 @@ int main() {
 	/* 
 		We need to store result of last k elements
 		but if k = n, you aren't really optimizing
+
+			TO-DO...
 	*/
-
-	// 	vector<int> dp(k);
-	// dp[0] = 0;
-	// for(int i = 1; i<n; i++) {
-	// 	int curi = i;
-	// 	int prev = i-1;
-	// 	int ans = INT_MAX;
-	// 	for(int j = 1; j<=k; j++) {
-	// 		if(i - j >= 0) {
-	// 			ans = min(ans, abs(heights[i] - heights[i-j]) + dp[i-j]);
-	// 		}
-	// 	}
-	// 	prev = curi;
-	// 	dp.erase(dp.begin());
-	// 	dp.push_back(curi);
-	// }
-
-	// cout << dp[n-1];
 
 	return 0;
 }
