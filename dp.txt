@@ -1,0 +1,58 @@
+INTRODUCTION TO DP
+Fibonacci problem
+
+
+-------------------------------1D DP------------------------------
+1> Frog Jump https://atcoder.jp/contests/dp/tasks/dp_a
+2> From Jump 2 https://atcoder.jp/contests/dp/tasks/dp_b
+3> Max Sum of subsequence https://www.codingninjas.com/studio/problems/maximum-sum-of-non-adjacent-elements_843261
+4> House Robber 2 https://leetcode.com/problems/house-robber-ii/
+
+
+
+-------------------------------2D DP------------------------------
+1> Ninja Training https://www.codingninjas.com/studio/problems/ninja-s-training_3621003
+2> Count ways in grid https://www.codingninjas.com/studio/problems/total-unique-paths_1081470
+3> Count ways w/ obstacles https://leetcode.com/problems/unique-paths-ii/
+4> Minimum path sum in grid https://leetcode.com/problems/minimum-path-sum/
+5> Triangle problem https://leetcode.com/problems/triangle/
+6> Maximum sum path in grid https://www.codingninjas.com/studio/problems/maximum-path-sum-in-the-matrix_797998
+
+
+
+-------------------------------3D DP------------------------------
+1> Chocolate pickup https://www.codingninjas.com/studio/problems/ninja-and-his-friends_3125885
+
+
+
+-------------------------------DP on Stocks-----------------------
+1> Best time to buy and sell stock https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+2> Best time to b&s stock 2 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/
+3> Best time to b&s stock 3 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/
+4> Best time to b&s stock 4 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/
+5> Best time to b&s stock w/ cooldown https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+6> Best time to b&s stock w/ transaction fees https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/
+
+
+-------------------------------DP on Strings-----------------------
+1> Longest common subsequence https://www.codingninjas.com/studio/problems/longest-common-subsequence_1063255
+2> Print lcs https://www.codingninjas.com/studio/problems/print-longest-common-subsequence_8416383
+3> Longest common substring https://www.codingninjas.com/studio/problems/longest-common-substring_1235207
+
+
+-------------------------------DP on Subsets-----------------------
+1> Subset with sum k https://www.codingninjas.com/studio/problems/subset-sum-equal-to-k_1550954
+2> Subsets with equal sum https://leetcode.com/problems/partition-equal-subset-sum/
+3> Array partition with min. diff https://www.codingninjas.com/studio/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum_842494
+4> Count subsets with sum k https://www.codingninjas.com/studio/problems/number-of-subsets_3952532
+5> Count subsets with diff k https://www.codingninjas.com/studio/problems/partitions-with-given-difference_3751628
+6> 0/1 Knapsack problem https://www.codingninjas.com/studio/problems/0-1-knapsack_920542
+7> Minimize coins https://www.codingninjas.com/studio/problems/minimum-elements_3843091
+8> Target sum https://www.codingninjas.com/studio/problems/target-sum_4127362
+9> Coin change 2 https://www.codingninjas.com/studio/problems/ways-to-make-coin-change_630471
+10> Unbound Knapsack https://www.codingninjas.com/studio/problems/unbounded-knapsack_1215029
+11> Rod cutting problem https://www.codingninjas.com/studio/problems/rod-cutting-problem_800284
+
+------------------------------DP on LIS---------------------------
+1> Longest increasing subsequence https://leetcode.com/problems/longest-increasing-subsequence/description/
+(also has printing LIS)

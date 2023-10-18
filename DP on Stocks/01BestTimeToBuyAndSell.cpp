@@ -1,16 +1,23 @@
-#include <bits/stdc++.h> 
-int maximumProfit(vector<int> &prices){
-    int n = prices.size();
-    int mini = prices[0];
-    int profit = 0;
-    
-    for(int i = 1; i<n; i++) {
-        if(mini <= prices[i]) {
-            profit = max(profit, prices[i] - mini);
+/*
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+*/
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int profit = 0;
+        int mini = prices[0];
+
+        int n = prices.size();
+
+        for(int i = 1; i<n; i++) {
+            if(prices[i] >= mini) {
+                profit = max(profit, prices[i] - mini);
+            }
+
+            if(prices[i] < mini) mini = prices[i];
         }
 
-        if(prices[i] < mini) mini = prices[i];
+        return profit;
     }
-
-    return profit;
-}
+};
