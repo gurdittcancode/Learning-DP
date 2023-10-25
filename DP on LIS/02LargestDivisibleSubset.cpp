@@ -1,36 +1,47 @@
+//same question as LIS, but instead of arr[idx] > arr[prev], we check for divisibility
+
 class Solution {
 public:
-    vector<int> largestDivisibleSubset(vector<int>& nums) {
-        int n = nums.size();
-        vector<int> dp(n, 1), hash(n);
 
-        sort(nums.begin(), nums.end());
+    vector<int> printLIS(vector<int> &arr, int n) {
+        vector<int> dp(n, 1);
+        vector<int> hash(n, 1);
         
-        int maxi = 1;
-        int endOfSub = 0;
-
-        for(int i = 0; i<n; i++) {
-            hash[i] = i;
-            for(int j = 0; j<i; j++) {
-                if(nums[i] % nums[j] == 0 && dp[j] + 1 > dp[i]) {
-                    dp[i] = dp[j] + 1;
-                    hash[i] = j;
+        for(int i = 0; i<n; i++){
+            
+            hash[i] = i; // initializing with current index
+            for(int prev_index = 0; prev_index <= i-1; prev_index++){
+                
+                if(arr[i] % arr[prev_index] == 0 && 1 + dp[prev_index] > dp[i]){
+                    dp[i] = 1 + dp[prev_index];
+                    hash[i] = prev_index;
                 }
             }
-
-            if(dp[i] > maxi) {
-                maxi = dp[i];
-                endOfSub = i;
+        }
+        
+        int ans = -1;
+        int lastIndex =-1;
+        
+        for(int i = 0; i<n; i++){
+            if(dp[i] > ans){
+                ans = dp[i];
+                lastIndex = i;
             }
         }
-
+        
         vector<int> temp;
-        temp.push_back(nums[endOfSub]);
-
-        while(hash[endOfSub] != endOfSub) {
-            endOfSub = hash[endOfSub];
-            temp.push_back(nums[endOfSub]);
+        temp.push_back(arr[lastIndex]);
+        
+        while(hash[lastIndex] != lastIndex){ // till not reach the initialization value
+            lastIndex = hash[lastIndex];
+            temp.push_back(arr[lastIndex]);    
         }
+        
         return temp;
+    }
+
+    vector<int> largestDivisibleSubset(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        return printLIS(nums, nums.size());
     }
 };

@@ -56,3 +56,6 @@ Fibonacci problem
 ------------------------------DP on LIS---------------------------
 1> Longest increasing subsequence https://leetcode.com/problems/longest-increasing-subsequence/description/
 (also has printing LIS)
+2> Largest divisible subset https://leetcode.com/problems/largest-divisible-subset
+3> Longest string chain https://leetcode.com/problems/longest-string-chain/
+4> Longest bitonic subsequence https://www.codingninjas.com/studio/problems/longest-bitonic-sequence_1062688
