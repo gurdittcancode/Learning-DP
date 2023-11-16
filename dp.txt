@@ -35,8 +35,8 @@ Fibonacci problem
 
 
 -------------------------------DP on Strings-----------------------
-1> Longest common subsequence https://www.codingninjas.com/studio/problems/longest-common-subsequence_1063255
-2> Print lcs https://www.codingninjas.com/studio/problems/print-longest-common-subsequence_8416383
+1> Longest common subsequence https://leetcode.com/problems/longest-common-subsequence/
+2> Print lcs https://leetcode.com/problems/longest-common-subsequence/
 3> Longest common substring https://www.codingninjas.com/studio/problems/longest-common-substring_1235207
 
 
@@ -60,3 +60,7 @@ Fibonacci problem
 3> Longest string chain https://leetcode.com/problems/longest-string-chain/
 4> Longest bitonic subsequence https://www.codingninjas.com/studio/problems/longest-bitonic-sequence_1062688
 5> Number of LIS https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/
+
+-----------------------------DP on Partitions---------------------
+1> Matrix Chain Multiplication https://www.codingninjas.com/studio/problems/matrix-chain-multiplication_975344
+2> Minimum cost to cut stick https://leetcode.com/problems/minimum-cost-to-cut-a-stick/description/
