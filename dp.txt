@@ -64,3 +64,4 @@ Fibonacci problem
 -----------------------------DP on Partitions---------------------
 1> Matrix Chain Multiplication https://www.codingninjas.com/studio/problems/matrix-chain-multiplication_975344
 2> Minimum cost to cut stick https://leetcode.com/problems/minimum-cost-to-cut-a-stick/description/
+3> Burst Balloons https://leetcode.com/problems/burst-balloons/description/
