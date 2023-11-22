@@ -24,18 +24,27 @@ int f(int i, int j, int isTrue, string &exp, vector<vector<vector<ll>>> &dp) {
         ll rT = f(ind + 1, j, 1, exp, dp);  // Number of ways to make the right expression true.
         ll rF = f(ind + 1, j, 0, exp, dp);  // Number of ways to make the right expression false.
 
+        //We are doing this calculation because for eg, 2 T's aren't the only way to make an OR expression TRUE
+
         // Check the operator at the current index and update ways accordingly.
         if (exp[ind] == '&') {
             if (isTrue) ways = (ways + (lT * rT) % mod) % mod;
+            //only T & T = T so add only these 2 numbers
             else ways = (ways + (lF * rT) % mod + (lT * rF) % mod + (lF * rF) % mod) % mod;
+            //F & T = T & F = F & F = F so add up all the ways
         }
         else if (exp[ind] == '|') {
             if (isTrue) ways = (ways + (lF * rT) % mod + (lT * rF) % mod + (lT * rT) % mod) % mod;
+            //F | T = T | F = T | T = T so add up all the ways
             else ways = (ways + (lF * rF) % mod) % mod;
+            //only F | F = F so add only these 2 numbers
         }
         else {  // XOR operator
             if (isTrue) ways = (ways + (lF * rT) % mod + (lT * rF) % mod) % mod;
+            //T ^ F = F ^ T = T so add up all the ways
             else ways = (ways + (lF * rF) % mod + (lT * rT) % mod) % mod;
+            //F ^ F = T ^ T = F so add up all the ways
+
         }
     }
     return dp[i][j][isTrue] = ways;
